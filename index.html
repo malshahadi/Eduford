@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">course</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="shwoMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam quae tempora iure at ad, eum ex officiis obcaecati excepturi<br>  officia ab molestias ipsum in illum repellat a, quia possimus aspernatur?
+</p>            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </header>
+
+
+
+
+
+    <script>
+
+        const navLink = document.getElementById("nav-links");
+        function hideMenu(){
+            navLink.style.right = "-200px";
+
+        }
+        function shwoMenu(){
+            
+            navLink.style.right = "0";
+
+        }
+    </script>
+</body>
+</html>
