@@ -87,7 +87,7 @@ nav img {
     margin: 6px 0 40px;
 }
 
-.text-box .hero-btn {
+ .hero-btn {
     background: transparent;
     text-decoration: none;
     color: #fff;
@@ -99,7 +99,7 @@ nav img {
     transition: 1s;
 
 }
-.text-box .hero-btn:hover {
+.hero-btn:hover {
     background: #f44336;
     border-color: #f44336;
 }
@@ -151,12 +151,12 @@ nav .fa {
     padding-top: 100px;
 }
 
-.course h1 {
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.course p {
+p {
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -164,7 +164,7 @@ nav .fa {
     color: #777;
 }
 
-.course .row {
+.row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
@@ -193,8 +193,9 @@ nav .fa {
 
 
 @media (max-width: 700px) {
-    .course .row {
+   .row {
         flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -206,4 +207,176 @@ nav .fa {
     margin: auto;
     text-align: center;
     padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background-color: rgba(226,0,0,0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*  */
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.facilities-col p {
+    padding: 0;
+}
+/*  */
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col {
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #fff3f3;
+    cursor: pointer;
+    padding: 25px;
+    display: flex;
+}
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonials-col i {
+    color: #f44336;
+}
+
+@media (max-width: 700px) {
+    .testimonials-col img {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+/*  */
+
+.cta {
+    width: 80%;
+    color: #fff;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("image/banner2.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px){
+    .cta h1 {
+        font-size: 21px;
+        padding: 0 10px;
+    }
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-family: 600;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #f44336;
 }
